@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Favourite Person ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6e8, #fff0f7);
+  overflow: hidden;
+}
+
+.page {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.page.active {
+  display: flex;
+}
+
+.card {
+  width: 90%;
+  max-width: 700px;
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 10px 35px rgba(255, 105, 180, .3);
+  text-align: center;
+}
+
+h1 {
+  color: #ff4f8f;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #ff6aa5;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 20px 0;
+  border: 5px solid pink;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px 35px;
+  border: none;
+  background: #ff4f8f;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2a75;
+}
+
+.heart {
+  position: fixed;
+  font-size: 22px;
+  color: pink;
+  pointer-events: none;
+  animation: float 8s linear forwards;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div id="hearts"></div>
+
+<div class="page active">
+  <div class="card">
+    <h1>💖 To My Favourite Person 💖</h1>
+    <h2>Sakshuu ❤️</h2>
+    <img src="photo1.jpg" alt="Our Photo">
+    <p>
+      Every heartbeat of mine whispers your name.<br>
+      Every smile of yours becomes my favourite reason to smile.<br>
+      You are the most beautiful chapter of my life.<br>
+      No matter where life takes us,<br>
+      you'll always remain my favourite person.
+    </p>
+    <p>
+      Forever Yours ❤️<br>
+      <b>Shubhii</b>
+    </p>
+    <button onclick="nextPage()">Next ❤️</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="card">
+    <h1>💕 Our Story 💕</h1>
+    <img src="photo2.jpg" alt="Our Photo">
+    <p>
+      I never imagined someone could make my heart feel this peaceful.<br>
+      Every conversation with you became my favourite memory.<br>
+      Every laugh we shared became a treasure.<br>
+      Thank you for making ordinary days feel extraordinary.<br>
+      I hope this little website reminds you just how deeply you are loved.
+    </p>
+    <p>
+      You are my comfort.<br>
+      My happiness.<br>
+      My forever.<br>
+      ❤️
+    </p>
+    <button onclick="nextPage()">Continue 💖</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="card">
+    <h1>💖 Things I Love About You 💖</h1>
+    <img src="photo1.jpg" alt="Our Photo">
+    <p>
+      I love your smile because it brightens even my darkest days.<br>
+      I love your beautiful eyes because they speak the words your lips never have to.<br>
+      I love your kindness, your caring heart, your cute little habits, and the way you make me feel like the luckiest person alive.<br>
+      You don't even realize how special you are...<br>
+      but I do.<br>
+      Every single day.<br>
+      Every single heartbeat.<br>
+      ❤️
+    </p>
+    <button onclick="nextPage()">Next ❤️</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="card">
+    <h1>🌸 My Promise 🌸</h1>
+    <img src="photo2.jpg" alt="Our Photo">
+    <p>
+      Sakshuu,<br>
+      I promise to stand beside you through every smile and every tear.<br>
+      I promise to support your dreams,<br>
+      respect your heart,<br>
+      protect your happiness,<br>
+      and remind you every day how beautiful you truly are.<br>
+      No matter how much time passes,<br>
+      my heart will always choose you.<br>
+      Again... Again... and Again.<br>
+      Because you'll forever be...<br>
+      My Favourite Person.<br>
+      ❤️
+    </p>
+    <button onclick="nextPage()">Mine forever 💕</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="card">
+    <h1>❤️ Forever & Always ❤️</h1>
+    <img src="photo1.jpg" alt="Our Photo">
+    <p>
+      My Dearest Sakshuu,<br>
+      If I had one wish, I would choose you in every lifetime.<br>
+      Thank you for becoming the most beautiful part of my life.<br>
+      Thank you for every smile you've given me, every laugh we've shared, and every memory we've created together.<br>
+      No matter how much time passes, you'll always remain my favourite person.<br>
+      You are my happiness, my peace, my comfort, my safe place, and my forever.<br>
+      I may not always find the perfect words, but my heart will always choose you.<br>
+      I love you more than yesterday, less than tomorrow, and forever beyond words.<br>
+      ❤️
+    </p>
+    <h2>
+      Forever Yours,<br><br>
+      ❤️ Shubhii ❤️
+    </h2>
+    <button onclick="celebrate()">I Love You ❤️</button>
+  </div>
+</div>
+
+<script>
+// Select all pages
+const pages = document.querySelectorAll(".page");
+let current = 0;
+
+// Function to move to the next page safely
+function nextPage() {
+  if (current < pages.length - 1) {
+    pages[current].classList.remove("active");
+    current++;
+    pages[current].classList.add("active");
+  }
+}
+
+// Function to create floating background hearts
+function heart() {
+  const h = document.createElement("div");
+  h.className = "heart";
+  h.innerHTML = ["❤", "💖", "💕", "💗"][Math.floor(Math.random() * 4)];
+  h.style.left = Math.random() * 100 + "vw";
+  h.style.fontSize = (18 + Math.random() * 20) + "px";
+  document.body.appendChild(h);
+  
+  setTimeout(() => {
+    h.remove();
+  }, 8000);
+}
+
+// Start the floating hearts interval
+setInterval(heart, 250);
+
+// Celebrate function for the final button
+function celebrate() {
+  for (let i = 0; i < 150; i++) {
+    setTimeout(() => {
+      const heart = document.createElement("div");
+      heart.innerHTML = ["❤️", "💖", "💕", "💗", "🌹", "✨"][Math.floor(Math.random() * 6)];
+      heart.style.position = "fixed";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = Math.random() * 100 + "vh";
+      heart.style.fontSize = (20 + Math.random() * 30) + "px";
+      heart.style.pointerEvents = "none";
+      heart.style.zIndex = "9999";
+      document.body.appendChild(heart);
+
+      heart.animate([
+        { transform: "scale(0)", opacity: 1 },
+        { transform: "scale(2) translateY(-150px)", opacity: 0 }
+      ], {
+        duration: 2500,
+        easing: "ease-out"
+      });
+
+      setTimeout(() => {
+        heart.remove();
+      }, 2500);
+    }, i * 30);
+  }
+
+  setTimeout(() => {
+    alert("❤️ I Love You Forever, Sakshuu ❤️\n\nForever Yours,\nShubhii");
+  }, 2000);
+}
+</script>
+
+</body>
+</html>
